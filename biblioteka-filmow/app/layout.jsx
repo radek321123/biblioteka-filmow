@@ -14,6 +14,7 @@ export default function RootLayout({children}) {
         <nav>
             <Link href={"/"} className={currentPathname === "/" ? "selected" : ""}>home</Link>
             <Link href={"/filmy"} className={currentPathname === "/filmy" ? "selected" : ""}>filmy</Link>
+            <Link href={"/filmy/dodaj"} className={currentPathname === "/filmy/dodaj" ? "selected" : ""}>dodaj</Link>
         </nav>
         {children}
         </body>
