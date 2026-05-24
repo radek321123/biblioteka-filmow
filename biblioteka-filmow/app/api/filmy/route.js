@@ -15,7 +15,6 @@ export async function GET() {
 }
 
 export async function POST(request) {
-
     const data = await request.json();
 
     const validation = movieSchema.safeParse(data);

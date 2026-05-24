@@ -15,7 +15,7 @@ export default function FormikForm() {
     const router = useRouter();
 
     const formik = useFormik({
-        initialValues: { title: 'titlee', year: '1900', genre: 'genree' },
+        initialValues: { title: '', year: '', genre: '' },
         validationSchema,
         onSubmit: (values) => {
             fetch("/api/filmy", {
